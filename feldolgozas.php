@@ -10,6 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 <?php
 if(empty($rendszam)){
     echo("<br>Adja meg a rendszám adatait.");
+    exit();
 } elseif(empty($marka)){
     echo("<br>Adja meg a márka adatait.");
 } elseif(empty($modell)){
